@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    {% block meta %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% endblock %}
+
+    <title>
+        {%block title%}{{name}}{%endblock%}
+    </title>
+
+    {% block css %}
+        <link href="/static/gfm.css" rel="stylesheet">
+    {% endblock %}
+
+    {% block head_js %}
+    {% endblock %}
+
+</head>
+
+<body style="font-size:12px;">
+    <div id="markdown" class="markdown-body">
+        {{html|safe}}
+    </div>
+</body>
+
+</html>
