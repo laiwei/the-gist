@@ -1,12 +1,12 @@
-##### 这是一个教你如何手把手写一个类似于github的gist
+##### 这是一个手把手教你如何写一个类似于github的gist
 
 |功能|
 |------------------------------|
+|支持markdown格式|
 |自动判断代码类型并支持代码高亮|
 |自动识别超链接|
-|支持markdown格式|
 |支持python, ruby, bash, js 等文件语法高亮|
-|表格扩展, github markdown flavored|
+|支持表格扩展, github markdown flavored|
 |使用python语言|
 |使用flask web框架|
 
