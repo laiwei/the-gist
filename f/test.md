@@ -1,12 +1,11 @@
-这是一个教你如何手把手写一个类似于github的gist
------
+##### 这是一个教你如何手把手写一个类似于github的gist
 
 |功能|
 |------------------------------|
 |自动判断代码类型并支持代码高亮|
 |自动识别超链接|
 |支持markdown格式|
-|支持python, ruby, bash, js 等等文件语法高亮|
+|支持python, ruby, bash, js 等文件语法高亮|
 |表格扩展, github markdown flavored|
 |使用python语言|
 |使用flask web框架|
@@ -40,7 +39,7 @@
       - [sundown](https://github.com/vmg/sundown)
 
             是一个c语言开发的，快速，兼容，稳定的markdown解析器。
-            github的markdown文档解析，底层就是用的sundown。
+            github.com的markdown文档解析，底层就是用的sundown。
 
       - [misaka](https://github.com/FSX/misaka/)
 
@@ -51,8 +50,11 @@
             pygments，这是一个很牛逼的项目，python开发的。
             专门用来提供语法高亮的，目前支持有上百种语言的高亮
             很简单，输入一段内容，自动高亮输出，输出格式可以是html，RTF，LaTeX 以及ascii序列
+            另外，pygments也提供一个shell命令行工具 pygmentize
+            比如：
+                pygmentize ./app.py  # 就会按照语法，高亮输出app.py的内容到屏幕
 
-      - [flask](flask.pocoo.org)
+      - [flask](flask.pocoo.org) -- [quickstart](http://flask.pocoo.org/docs/quickstart/)
 
              一个很流行的python web框架
 
@@ -76,4 +78,8 @@
       pip install -r ./pip_requirements.txt
 
       python app.py
+
+      浏览器中访问
+      http://127.0.0.1:5009/show/test.md
+      http://127.0.0.1:5009/show/test.py
     ```
