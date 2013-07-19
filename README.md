@@ -25,7 +25,7 @@
     ```bash
     mkdir -p  ~/proj/the-gist/
     cd ~/proj/the-gist/
-    virualenv ./env
+    virtualenv ./env
     source ./env/bin/activate
 
     pip install misaka
@@ -73,7 +73,7 @@
 
     ```bash
       git clone https://github.com/laiwei/the-gist ~/
-      cd ~/the-gist/ && virualenv env
+      cd ~/the-gist/ && virtualenv env
       . env/bin/activate
       pip install -r ./pip_requirements.txt
 
