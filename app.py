@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route("/show/<name>")
 def show(name):
-    name = name.replace("..", "", -1).replace(" ", " ", -1)
+    name = name.replace("..", "", -1).replace(" ", "", -1)
     file_path = os.path.join("./f", name)
     if not (os.path.exists(file_path) or os.path.isfile(file_path)):
         abort(404, u"不存在这个文件哈")
